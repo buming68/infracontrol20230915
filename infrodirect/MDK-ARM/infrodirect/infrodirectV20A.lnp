@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"infrodirect\startup_stm32f103xb.o"
+"infrodirect\main.o"
+"infrodirect\gpio.o"
+"infrodirect\tim.o"
+"infrodirect\stm32f1xx_it.o"
+"infrodirect\stm32f1xx_hal_msp.o"
+"infrodirect\stm32f1xx_hal_gpio_ex.o"
+"infrodirect\stm32f1xx_hal_tim.o"
+"infrodirect\stm32f1xx_hal_tim_ex.o"
+"infrodirect\stm32f1xx_hal.o"
+"infrodirect\stm32f1xx_hal_rcc.o"
+"infrodirect\stm32f1xx_hal_rcc_ex.o"
+"infrodirect\stm32f1xx_hal_gpio.o"
+"infrodirect\stm32f1xx_hal_dma.o"
+"infrodirect\stm32f1xx_hal_cortex.o"
+"infrodirect\stm32f1xx_hal_pwr.o"
+"infrodirect\stm32f1xx_hal_flash.o"
+"infrodirect\stm32f1xx_hal_flash_ex.o"
+"infrodirect\stm32f1xx_hal_exti.o"
+"infrodirect\system_stm32f1xx.o"
+--strict --scatter "infrodirect\infrodirectV20A.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "infrodirectV20A.map" -o infrodirect\infrodirectV20A.axf
